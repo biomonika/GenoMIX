@@ -19,7 +19,7 @@ for read in samfile:
 		ff+=1
 	lineCount+=1
 	newPercentage = currPercentage+1
-	if float(lineCount)/8672163 >= float(newPercentage)/100: #if at least X% of the file has been read, print percentage	
+	if float(lineCount)/8672163 >= float(newPercentage)/100: #track progress	
 		currPercentage = newPercentage
 		print str(currPercentage) + "% complete"
 samfile.close()
